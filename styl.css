@@ -1,0 +1,145 @@
+body {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 14px;
+	background-color: white;
+	color: #4D7CAE;
+}
+.site-nav {
+	height: 40px;
+	width: 100%;
+	background-color: #375A7F;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.site-nav-trigger {
+	border: 0;
+	border-radius: 5px;
+	background: #6A99CB;
+	height: 30px;
+	width: 50px;
+}
+button {
+	color: #375A7F;
+}
+.menu {
+	display: flex;
+	box-sizing: border-box;
+	position: absolute;
+	top: 131.5px;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	background: #375A7F;
+	transform: translateX(-100%);
+	transition: 0.3s transform ease-in-out;
+	z-index: 1;
+}
+.menu ul {
+	padding: 0;
+	list-style-type: none;
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	width: 100%;
+}
+.menu li {
+	background: #78ADE5;
+	margin-top: 20px;
+	color: #4D7CAE;
+	display: flex;
+	border-radius: 5px;
+	flex-basis: 100%;
+	height: 30px;
+}
+.menu a {
+	display: flex;
+	padding: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+}
+.menu a:hover {
+	background: #4D7CAE;
+	color: #78ADE5;
+}
+.site-nav-trigger:focus ~ .menu, .menu:hover {
+	transform: translateX(0);
+	margin-left: 8.2px;
+}
+h1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #6A99CB;
+	color: #375A7F;
+	padding: 10px 20px 10px 20px;
+}
+h2 {
+	text-align: center;
+}
+p {
+	text-align: justify;
+}
+.cale {
+	margin-left: 100px;
+	margin-right: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-left: 4px solid #375A7F;
+	border-right: 4px solid #375A7F;
+}
+div.obraz {
+	height: 200px;
+	width: 300px;
+	overflow: hidden;
+	padding: 0;
+	float: left;
+	margin: 35px;
+}
+.obraz img {
+	transition-duration: 3s;
+	width: 300px;
+	margin: 0 auto;
+	display: block;
+}
+.obraz img:hover {
+	transform: scale(1.2);
+	opacity: 0.4;
+}
+.zdjęcia {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.pozycja {
+	position: absolute;
+	top: 190px;
+	left: -30px;
+	width: 50%;
+	z-index: 0;
+}
+.pozycja2 {
+	margin-top: 0;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	margin-left: 27%;
+	padding: 0;
+	position: absolute;
+	top: 190px;
+	width: 50%;
+	right:-30px;
+}
+.logo {
+	width: 110px;
+	height: 100px;
+	position: absolute;
+	right: 30px;
+	top: 27px;
+	border-radius: 5px;
+}
